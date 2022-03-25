@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
   <body>
-    <h1>Hello Git</h1>
-    <h2>time to do some stuff</h2>
+    <div class="container">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <form id="search-form">
+            <div class="decorate">
+              <input
+                class="change"
+                type="search"
+								placeholder="What is your location?..."
+								id="cityInput"
+              />
+              <input class="searchbar" type="submit" value="🔍 search" />
+              <input
+                class="location"
+                type="submit"
+                value="📍 Current location"
+              />
+						</div>
+					</form>
+
+            <div class="main-info">
+              <div class="row">
+                <div class="col-3">
+                  <span>
+                    <strong class="city-name" id="city">New York </strong>
+										<li id="date"></li>
+                </div>
+                <div class="col-3">
+                  <span class="number" id="temperature"> 20 </span>
+                  <span class="degrees">°F </span>
+                </div>
+                <div class="col-2">
+                  <span> High: 25°F </span>
+                  <br />
+                  <span> Low: 9°F </span>
+                </div>
+                <div class="col-4 weatherDiv">
+                  <span> Precipitation: 83% </span>
+                  <br />
+                  <span> Humidity: 72% </span>
+                  <br />
+                  <span> Wind: 3 mph </span>
+                </div>
+              </div>
+              <div class="row anotherrow">
+                <div class="col-3 sun">☀️</div>
+                <div class="col adjust noLeftBorder">
+                  MON
+                  <span class="small-letters"> 31st </span>
+                </div>
+                <div class="col adjust noLeftBorder">
+                  TUE
+                  <span class="small-letters"> 1st</span>
+                </div>
+                <div class="col adjust noLeftBorder">
+                  WED
+                  <span class="small-letters"> 2nd </span>
+                </div>
+                <div class="col adjust noLeftBorder">
+                  THUR
+                  <span class="small-letters"> 3rd </span>
+                </div>
+                <div class="col fix noLeftBorder">
+                  FRI
+                  <span class="small-letters"> 28th </span>
+                  <span> ☀️ </span>
+                </div>
+                <div class="col adjust noLeftBorder">
+                  SAT
+                  <span class="small-letters"> 29th </span>
+                </div>
+                <div class="col adjust sundayBox">
+                  SUN
+                  <span class="small-letters"> 30th </span>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>

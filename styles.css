@@ -1,8 +1,124 @@
-h1 {
-  color: blueviolet;
-  text-align: center;
+.main-info {
+  padding: 24px 0px 0px 16px;
+  border: 3px solid rgb(0, 0, 0);
+  margin: 0px 20px;
+  border-radius: 5px;
+  height: 340px;
+  width: 800px;
 }
-h2 {
-  color: green;
-  text-align: center;
+
+.container {
+  margin: 0px;
+  width: 1000px;
+}
+.card {
+  margin: 50px 25px;
+}
+.card-body {
+  border: 3px solid black;
+  border-radius: 2%;
+  padding: 0px 50px 50px 0px;
+  width: 850px;
+  height: 450px;
+  background-color: white;
+}
+.decorate {
+  padding: 20px 20px;
+}
+.change {
+  margin: 0px;
+  border: 3px solid black;
+  border-radius: 2px;
+  padding: 7px 50px 7px 10px;
+  width: 350px;
+}
+.searchbar {
+  margin: 0px 20px;
+  color: #4eae53;
+  background-color: white;
+  border: 3px solid #4eae53;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+.location {
+  padding: 5px 10px;
+  color: #42a5f5;
+  background-color: white;
+  border: 3px solid #42a5f5;
+  border-radius: 2px;
+}
+.weatherDiv {
+  font-size: 12px;
+  padding: 0px;
+}
+div.col-2 {
+  position: relative;
+  left: 19px;
+  top: -1px;
+  padding: 0px 0px 0px 38px;
+  font-size: 14px;
+}
+.city-name {
+  font-size: 28px;
+}
+.number {
+  font-size: 90px;
+  position: absolute;
+  top: 100px;
+  font-family: "Oswald", sans-serif;
+}
+.anotherrow {
+  padding-top: 136px;
+  width: 780px;
+  padding-left: 10px;
+  padding-right: 2px;
+  margin-left: 0px;
+}
+.sun {
+  font-size: 80px;
+  padding-top: 0px;
+  position: relative;
+  left: 10px;
+  bottom: 30px;
+  top: -66px;
+}
+div.fix {
+  background-color: yellow;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+.adjust {
+  border: 2px solid black;
+  margin: 1px;
+  background-color: cornflowerblue;
+}
+.small-letters {
+  display: block;
+  margin: 0 auto;
+  font-size: 10px;
+  position: relative;
+  margin: 0px 0px 0px 7px;
+}
+.noLeftBorder {
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding: 0;
+  margin: 0;
+}
+.sundayBox {
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+  padding: 0;
+  margin: 0;
+}
+.degrees {
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  right: -77px;
+  top: 121px;
+}
+li {
+  list-style: none;
 }
