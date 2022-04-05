@@ -26,6 +26,7 @@ function displayWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
 }
 function handleSubmit(event) {
   event.preventDefault();

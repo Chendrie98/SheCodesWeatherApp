@@ -12,19 +12,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css"/>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <body>
     <div class="container">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem">
         <div class="card-body">
           <form id="search-form">
             <div class="decorate">
               <input
                 class="change"
                 type="search"
-								placeholder="What is your location?..."
-								id="cityInput"
+                placeholder="What is your location?..."
+                id="cityInput"
               />
               <input class="searchbar" type="submit" value="🔍 search" />
               <input
@@ -32,71 +32,73 @@
                 type="submit"
                 value="📍 Current location"
               />
-						</div>
-					</form>
+            </div>
+          </form>
 
-            <div class="main-info">
-              <div class="row">
-                <div class="col-sm-4">
-                  <span>
-                    <strong class="city-name" id="city">New York </strong>
-										<li id="date"></li>
-                </div>
-                <div class="col-sm-4">
-                  <span class="number" id="temperature"></span>
-                  <span class="degrees"> °F | °C </span>
-                </div>
-                <div class="col-sm-2">
-                  <span> High: 25°F </span>
-                  <br />
-                  <span> Low: 9°F </span>
-                </div>
-                <div class="col-sm-2 weatherDiv">
-                  <span> Precipitation: 83% </span>
-                  <br />
-                  <span> Humidity: 72% </span>
-                  <br />
-                  <span> Wind: 3 mph </span>
-                </div>
+          <div class="main-info">
+            <div class="row">
+              <div class="col-sm-4">
+                <span>
+                  <strong class="city-name" id="city">New York </strong>
+                  <li id="date"></li>
+                </span>
               </div>
-              <div class="row anotherrow">
-                <div class="col-sm-2 sun">☀️</div>
-                <div class="col adjust noLeftBorder">
-                  MON
-                  <span class="small-letters"> 31st </span>
-                </div>
-                <div class="col adjust noLeftBorder">
-                  TUE
-                  <span class="small-letters"> 1st</span>
-                </div>
-                <div class="col adjust noLeftBorder">
-                  WED
-                  <span class="small-letters"> 2nd </span>
-                </div>
-                <div class="col adjust noLeftBorder">
-                  THUR
-                  <span class="small-letters"> 3rd </span>
-                </div>
-                <div class="col fix noLeftBorder">
-                  FRI
-                  <span class="small-letters"> 28th </span>
-                  <span> ☀️ </span>
-                </div>
-                <div class="col adjust noLeftBorder">
-                  SAT
-                  <span class="small-letters"> 29th </span>
-                </div>
-                <div class="col adjust sundayBox">
-                  SUN
-                  <span class="small-letters"> 30th </span>
-                </div>
+              <div class="col-sm-4">
+                <span class="number" id="temperature"></span>
+                <span class="degrees"> °F | °C </span>
+              </div>
+              <div class="col-sm-4 weatherDiv">
+                <span> Precipitation: 83% </span>
+                <br />
+                <span> Humidity: <span class="humidity"> </span></span>
+                <br />
+                <span> Wind: 3 mph </span>
               </div>
             </div>
-          
+            <div class="row anotherrow">
+              <div class="col-sm-2 sun">☀️</div>
+              <div class="col adjust noLeftBorder">
+                MON
+                <span class="small-letters"> 31st </span>
+              </div>
+              <div class="col adjust noLeftBorder">
+                TUE
+                <span class="small-letters"> 1st</span>
+              </div>
+              <div class="col adjust noLeftBorder">
+                WED
+                <span class="small-letters"> 2nd </span>
+              </div>
+              <div class="col adjust noLeftBorder">
+                THUR
+                <span class="small-letters"> 3rd </span>
+              </div>
+              <div class="col fix noLeftBorder">
+                FRI
+                <span class="small-letters"> 28th </span>
+                <span> ☀️ </span>
+              </div>
+              <div class="col adjust noLeftBorder">
+                SAT
+                <span class="small-letters"> 29th </span>
+              </div>
+              <div class="col adjust sundayBox">
+                SUN
+                <span class="small-letters"> 30th </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <span class="myCode"><a href="https://github.com/Chendrie98/SheCodesWeatherApp" target="_blank"> Open-source code</a>, by Christina Hendrie </span>
+    <span class="myCode"
+      ><a
+        href="https://github.com/Chendrie98/SheCodesWeatherApp"
+        target="_blank"
+      >
+        Open-source code</a
+      >, by Christina Hendrie
+    </span>
     <script src="script.js"></script>
   </body>
 </html>
