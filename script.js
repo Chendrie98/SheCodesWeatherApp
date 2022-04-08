@@ -22,11 +22,15 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 function displayWeather(response) {
+  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector(".humidity").innerHTML = response.data.main.humidity;
+  document.querySelector(".wind-speed").innerHTML = Math.round(
+    response.data.wind.speed
+  );
 }
 function handleSubmit(event) {
   event.preventDefault();
