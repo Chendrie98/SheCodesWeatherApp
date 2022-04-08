@@ -22,7 +22,6 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 function displayWeather(response) {
-  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -31,6 +30,8 @@ function displayWeather(response) {
   document.querySelector(".wind-speed").innerHTML = Math.round(
     response.data.wind.speed
   );
+  document.querySelector(".weather").innerHTML =
+    response.data.weather[0].description;
 }
 function handleSubmit(event) {
   event.preventDefault();
