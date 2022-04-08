@@ -22,8 +22,6 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 function displayWeather(response) {
-  console.log(response.data);
-  let iconElement = document.querySelector("#icon");
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -34,14 +32,6 @@ function displayWeather(response) {
   );
   document.querySelector(".weather").innerHTML =
     response.data.weather[0].description;
-  document.querySelector(
-    "#icon"
-  ).setAttribute = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
-  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function handleSubmit(event) {
