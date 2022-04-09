@@ -68,7 +68,7 @@ div.col-2 {
   font-family: "Oswald", sans-serif;
 }
 .anotherrow {
-  padding-top: 100px;
+  padding-top: 116px;
   width: 780px;
   padding-left: 10px;
   padding-right: 2px;
@@ -78,7 +78,7 @@ div.col-2 {
   font-size: 80px;
   padding-top: 0px;
   position: relative;
-  left: -5px;
+  left: -16px;
   bottom: 30px;
   top: -66px;
 }
@@ -116,7 +116,7 @@ div.fix {
   font-size: 20px;
   color: black;
   position: absolute;
-  right: -185px;
+  right: -200px;
   top: 115px;
 }
 li {
